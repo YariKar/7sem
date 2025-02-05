@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap');
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #D9D9D9;
+    border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #E3E3E3;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    background-color: var(--tertiary-color);
+
+    --tertiary-color: #646464;
+    --base-color: #28282E;
+    --primary-color: #79CE7C;
+    --text-color: #E4E4E4;
+    --contrast-text-color: #333333;
+    --tertiary-text-color: #AEAEAE;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-space {
+    justify-content: space-between;
+}
+
+.flex-start {
+    justify-content: start;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-end {
+    justify-content: end;
+}
+
+.align-start {
+    align-items: start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: end;
+}
+
+.width-full {
+    width: 100%;
+}
+
+.height-full {
+    height: 100%;
+}
+
+.fit-width {
+    width: fit-content;
+}
+
+.fit-height {
+    height: fit-content;
+}
+
+.scroll-column {
+    display: flex;
+    flex-direction: column;
+
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.scroll-row {
+    display: flex;
+    flex-direction: row;
+
+    max-width: 100%;
+    overflow-x: auto;
+}

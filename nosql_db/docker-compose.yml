@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  db:
+    image: arangodb:3.10
+    environment:
+      - ARANGO_ROOT_PASSWORD=password
+    volumes:
+      - arango_data:/var/lib/arangodb3
+
+  backend:
+    build:
+      context: ./gighunt/
+      dockerfile: Dockerfile
+    environment:
+      - ARANGODB_SETTINGS__HOSTNAME=db
+      - ARANGODB_SETTINGS__PORT=8529
+    ports:
+      - 127.0.0.1:8000:8000
+
+  frontend:
+    build:
+      context: ./frontend/
+      dockerfile: Dockerfile
+    ports:
+      - 127.0.0.1:3000:3000
+
+volumes:
+  arango_data:

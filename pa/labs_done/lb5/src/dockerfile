@@ -1,0 +1,14 @@
+FROM ubuntu:18.04
+
+RUN apt-get update && \
+    apt-get install -y pocl-opencl-icd ocl-icd-opencl-dev gcc g++ opencl-headers clinfo 
+
+WORKDIR /app
+
+COPY . /app/
+
+ENV NVIDIA_VISIBLE_DEVICES all
+ENV NVIDIA_DRIVER_CAPABILITIES compute,utility,display
+
+RUN g++ -o gpu_multiply main.cpp matrix/matrix.cpp -lOpenCL
+

@@ -1,0 +1,348 @@
+{
+    "static": [
+        {
+            "_key": "33602",
+            "_id": "Static/33602",
+            "_rev": "_i4URR56---",
+            "equipment": [],
+            "tags": [
+                "Релиз",
+                "Концерт",
+                "Поиск участников",
+                "Поиск группы",
+                "Поиск места",
+                "Предложение места",
+                "Поболтать",
+                "Поиск тульпы",
+                "Поиск Волынского"
+            ],
+            "talents": [
+                "vocal",
+                "guitar",
+                "viola",
+                "bass",
+                "percussion"
+            ],
+            "genres": []
+        }
+    ],
+    "vertices": {
+        "users": [
+            {
+                "_key": "33590",
+                "_id": "User/33590",
+                "_rev": "_i4URR5y---",
+                "email": "test@gmail.com",
+                "password": "qwerty",
+                "first_name": "test",
+                "last_name": "user",
+                "creation_date": "2021-01-01",
+                "last_edit_date": "2022-01-01",
+                "avatar_uri": "assets/avatars/test_user.png",
+                "talents": [
+                    "electric-guitar"
+                ]
+            },
+            {
+                "_key": "33633",
+                "_id": "User/33633",
+                "_rev": "_i4UR8by---",
+                "email": "gildem10@yandex.ru",
+                "password": "123456",
+                "first_name": "Tim",
+                "last_name": "Allen",
+                "creation_date": "2024-12-08",
+                "last_edit_date": "2024-12-08",
+                "avatar_uri": "",
+                "talents": []
+            },
+            {
+                "_key": "33648",
+                "_id": "User/33648",
+                "_rev": "_i4USe4K---",
+                "email": "gildem13@yandex.ru",
+                "password": "123456",
+                "first_name": "Dim",
+                "last_name": "Small",
+                "creation_date": "2024-12-08",
+                "last_edit_date": "2024-12-08",
+                "avatar_uri": "",
+                "talents": []
+            },
+            {
+                "_key": "33655",
+                "_id": "User/33655",
+                "_rev": "_i4USs4K---",
+                "email": "gildem15@yandex.ru",
+                "password": "123456",
+                "first_name": "Dan",
+                "last_name": "Ballan",
+                "creation_date": "2024-12-08",
+                "last_edit_date": "2024-12-08",
+                "avatar_uri": "",
+                "talents": []
+            }
+        ],
+        "groups": [
+            {
+                "_key": "34227",
+                "_id": "Group/34227",
+                "_rev": "_i4UgwQG---",
+                "name": "Mohnatye Sobaki",
+                "creation_date": "2024-12-08",
+                "last_edit_date": "2024-12-08",
+                "avatar_uri": "",
+                "genres": []
+            },
+            {
+                "_key": "34234",
+                "_id": "Group/34234",
+                "_rev": "_i4Ug446---",
+                "name": "Rover",
+                "creation_date": "2024-12-08",
+                "last_edit_date": "2024-12-08",
+                "avatar_uri": "",
+                "genres": []
+            }
+        ],
+        "announcements": [
+            {
+                "_key": "34027",
+                "_id": "Announcement/34027",
+                "_rev": "_i4UbvhK---",
+                "creation_date": "2024-12-08",
+                "content": "Привет! Сегодня я презентую альбом Brat 2! Приходите в Tochka!",
+                "tag": "Концерт"
+            },
+            {
+                "_key": "34057",
+                "_id": "Announcement/34057",
+                "_rev": "_i4UcbQq---",
+                "creation_date": "2024-12-08",
+                "content": "Привет! Сегодня я презентую альбом Yahoo but Google! Приходите в 2A!",
+                "tag": "Концерт"
+            },
+            {
+                "_key": "34341",
+                "_id": "Announcement/34341",
+                "_rev": "_i4UjPIG---",
+                "creation_date": "2024-12-08",
+                "content": "Скоро новый альбом...",
+                "tag": "Релиз"
+            },
+            {
+                "_key": "34371",
+                "_id": "Announcement/34371",
+                "_rev": "_i4Uj6CG---",
+                "creation_date": "2024-12-08",
+                "content": "Вышел новый альбом на всех площадках!",
+                "tag": "Релиз"
+            }
+        ],
+        "places": [
+            {
+                "_key": "33931",
+                "_id": "Place/33931",
+                "_rev": "_i4UYJXa---",
+                "name": "Tochka",
+                "creation_date": "2024-12-08",
+                "last_edit_date": "2024-12-08",
+                "avatar_uri": "",
+                "type": "hall",
+                "address": "Koshkina d. 15",
+                "phone_number": "+78009553035",
+                "area": "",
+                "equipment": {
+                    "": ""
+                }
+            },
+            {
+                "_key": "33942",
+                "_id": "Place/33942",
+                "_rev": "_i4UYjI2---",
+                "name": "2A",
+                "creation_date": "2024-12-08",
+                "last_edit_date": "2024-12-08",
+                "avatar_uri": "",
+                "type": "hall",
+                "address": "Tunndroveka d. 10",
+                "phone_number": "+78009553030",
+                "area": "",
+                "equipment": {
+                    "": ""
+                }
+            },
+            {
+                "_key": "33961",
+                "_id": "Place/33961",
+                "_rev": "_i4UZPG----",
+                "name": "Geran",
+                "creation_date": "2024-12-08",
+                "last_edit_date": "2024-12-08",
+                "avatar_uri": "",
+                "type": "open-air",
+                "address": "Malaya Derevannya d. 1",
+                "phone_number": "+78009553830",
+                "area": "",
+                "equipment": {
+                    "": ""
+                }
+            }
+        ]
+    },
+    "edges": {
+        "users": {
+            "groups": [
+                {
+                    "_key": "34389",
+                    "_id": "UserGroup/34389",
+                    "_from": "User/33590",
+                    "_to": "Group/34227",
+                    "_rev": "_i4UkXNe---",
+                    "join_date": "2024-12-08"
+                },
+                {
+                    "_key": "34404",
+                    "_id": "UserGroup/34404",
+                    "_from": "User/33633",
+                    "_to": "Group/34227",
+                    "_rev": "_i4UkjyC---",
+                    "join_date": "2024-12-08"
+                },
+                {
+                    "_key": "34435",
+                    "_id": "UserGroup/34435",
+                    "_from": "User/33648",
+                    "_to": "Group/34234",
+                    "_rev": "_i4Uk8Oe---",
+                    "join_date": "2024-12-08"
+                },
+                {
+                    "_key": "34450",
+                    "_id": "UserGroup/34450",
+                    "_from": "User/33655",
+                    "_to": "Group/34234",
+                    "_rev": "_i4UlKGG---",
+                    "join_date": "2024-12-08"
+                }
+            ]
+        },
+        "stars": {
+            "users": [
+                {
+                    "_key": "33845",
+                    "_id": "StarsToUser/33845",
+                    "_from": "User/33655",
+                    "_to": "User/33633",
+                    "_rev": "_i4UWDCG---"
+                },
+                {
+                    "_key": "33888",
+                    "_id": "StarsToUser/33888",
+                    "_from": "User/33590",
+                    "_to": "User/33648",
+                    "_rev": "_i4UWiA----"
+                }
+            ],
+            "groups": [
+                {
+                    "_key": "34272",
+                    "_id": "StarsToGroup/34272",
+                    "_from": "User/33633",
+                    "_to": "Group/34227",
+                    "_rev": "_i4Uho5----"
+                },
+                {
+                    "_key": "34291",
+                    "_id": "StarsToGroup/34291",
+                    "_from": "User/33590",
+                    "_to": "Group/34227",
+                    "_rev": "_i4Uhz3q---"
+                },
+                {
+                    "_key": "34314",
+                    "_id": "StarsToGroup/34314",
+                    "_from": "User/33590",
+                    "_to": "Group/34234",
+                    "_rev": "_i4UiKJS---"
+                }
+            ],
+            "announcements": [
+                {
+                    "_key": "34187",
+                    "_id": "StarsToAnnouncement/34187",
+                    "_from": "User/33655",
+                    "_to": "Announcement/34027",
+                    "_rev": "_i4UgFCS---"
+                },
+                {
+                    "_key": "34206",
+                    "_id": "StarsToAnnouncement/34206",
+                    "_from": "User/33633",
+                    "_to": "Announcement/34027",
+                    "_rev": "_i4UgOzi---"
+                }
+            ]
+        },
+        "comments": {
+            "announcements": [
+                {
+                    "_key": "34145",
+                    "_id": "CommentToAnnouncement/34145",
+                    "_from": "User/33633",
+                    "_to": "Announcement/34027",
+                    "_rev": "_i4Uf-7q---",
+                    "creation_date": "2024-12-08",
+                    "content": {
+                        "content": "Крутой альбом, все приходите!"
+                    }
+                },
+                {
+                    "_key": "34164",
+                    "_id": "CommentToAnnouncement/34164",
+                    "_from": "User/33655",
+                    "_to": "Announcement/34027",
+                    "_rev": "_i4UfX5y---",
+                    "creation_date": "2024-12-08",
+                    "content": {
+                        "content": "Я послушал, мне зашло"
+                    }
+                }
+            ]
+        },
+        "producer_announcements": {
+            "users": [
+                {
+                    "_key": "34030",
+                    "_id": "AnnouncementFromUser/34030",
+                    "_from": "User/33648",
+                    "_to": "Announcement/34027",
+                    "_rev": "_i4UbvhO---"
+                },
+                {
+                    "_key": "34060",
+                    "_id": "AnnouncementFromUser/34060",
+                    "_from": "User/33633",
+                    "_to": "Announcement/34057",
+                    "_rev": "_i4UcbQu---"
+                }
+            ],
+            "groups": [
+                {
+                    "_key": "34344",
+                    "_id": "AnnouncementFromGroup/34344",
+                    "_from": "Group/34234",
+                    "_to": "Announcement/34341",
+                    "_rev": "_i4UjPIK---"
+                },
+                {
+                    "_key": "34374",
+                    "_id": "AnnouncementFromGroup/34374",
+                    "_from": "Group/34227",
+                    "_to": "Announcement/34371",
+                    "_rev": "_i4Uj6CO---"
+                }
+            ]
+        }
+    }
+}

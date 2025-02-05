@@ -1,0 +1,23 @@
+.author-name {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.announcement-date {
+    color: var(--tertiary-text-color);
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.announcement-stars-count {
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.annoncement-content {
+    color: var(--text-color);
+    font-size: 12px;
+    font-weight: normal;
+}

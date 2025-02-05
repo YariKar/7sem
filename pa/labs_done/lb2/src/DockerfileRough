@@ -1,0 +1,16 @@
+FROM alpine:latest
+
+# Установка необходимых пакетов
+RUN apk add --no-cache gcc g++
+
+# Переход в рабочий каталог
+WORKDIR /app
+
+# Добавление файлов проекта в контейнер
+COPY . .
+
+# Компиляция приложения
+RUN g++ matrix.cpp threadsafe_rough_queue.cpp -o thread_rough
+
+# Запуск приложения
+CMD ["./thread_rough"]

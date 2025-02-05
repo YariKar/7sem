@@ -1,0 +1,16 @@
+FROM alpine:latest
+
+# Установка необходимых пакетов
+RUN apk add --no-cache gcc g++
+
+# Переход в рабочий каталог
+WORKDIR /app
+
+# Добавление файлов проекта в контейнер
+COPY . .
+
+# Компиляция приложения
+RUN g++ matrix.cpp threadsafe_thin_queue.cpp -o thread_thin
+
+# Запуск приложения
+CMD ["./thread_thin"]

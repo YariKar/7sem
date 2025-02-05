@@ -1,0 +1,10 @@
+.important-text {
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text {
+    white-space: nowrap;
+    color: var(--text-color);
+}

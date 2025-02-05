@@ -1,0 +1,50 @@
+.backdrop {
+    position: absolute;
+
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+
+    background: linear-gradient(rgba(from var(--base-color) R G B / 0), rgba(from var(--base-color) R G B / 0.4));
+}
+
+.layout {
+    box-sizing: border-box;
+    position: absolute;
+
+    padding: 0 20% 0 20%;
+
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    box-sizing: border-box;
+    position: absolute;
+
+    bottom: 30px;
+
+    height: 100px;
+    width: 100%;
+
+    background-color: var(--base-color);
+
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: var(--tertiary-color);
+}
+
+.icon-caption {
+    color: var(--tertiary-text-color);
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.active [part=icon] {
+    fill: var(--primary-color);
+}
+
+.unactive [part=icon] {
+    fill: var(--tertiary-color);
+}

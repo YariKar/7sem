@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "gighunt"
+version = "0.1.1"
+description = ""
+authors = ["Fayzak <gildem19@yandex.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-arango = "^8.1.1"
+fastapi = "^0.115.4"
+pydantic-settings = "^2.6.0"
+uvicorn = "^0.32.0"
+python-multipart = "^0.0.19"
+
+[tool.poetry.scripts]
+start-backend = "src.gighunt.main:start_backend"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
