@@ -1,0 +1,19 @@
+        // try
+        // {
+        //     program.build({device});
+        // }
+        // catch (const cl::Error &)
+        // {
+        //     std::cerr << "Ошибка компиляции ядра: "
+        //               << program.getBuildInfo<CL_PROGRAM_BUILD_LOG>(device) << std::endl;
+        //     throw;
+        // }
+
+            // catch (const cl::Error &e)
+    // {
+    //     std::cerr << "OpenCL ошибка: " << e.what() << " (" << e.err() << ")" << std::endl;
+    //     return 1;
+    // }
+
+    ENV NVIDIA_VISIBLE_DEVICES all
+ENV NVIDIA_DRIVER_CAPABILITIES compute,utility,display

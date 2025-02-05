@@ -1,0 +1,12 @@
+docker buildx build . -f DockerfileRough -t thread_rough
+docker run -it thread_thin
+
+docker buildx build . -f DockerfileThin -t thread_thin
+docker run -it thread_thin
+
+docker buildx build . -f DockerfileCompare -t thread_compare
+docker run -it thread_compare
+
+
+
+docker exec -it thread_compare nproc - узнать количество потоков работающих при работе контейнера

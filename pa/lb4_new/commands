@@ -1,0 +1,10 @@
+docker buildx build . -t multiply
+docker run -it multiply
+docker exec -it .. /bin/sh
+
+docker buildx build . -t multiply_test_threads
+docker run -it multiply_test_threads
+
+ENTRYPOINT ["tail", "-f", "/dev/null"]
+
+docker rmi -f $(docker images --filter "dangling=true" -q --no-trunc)

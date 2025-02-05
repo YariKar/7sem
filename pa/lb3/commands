@@ -1,0 +1,5 @@
+docker buildx build . -t lock_free
+docker run -it lock_free
+
+docker buildx build . -t lock_free_time
+docker run -it lock_free_time

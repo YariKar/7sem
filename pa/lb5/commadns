@@ -1,0 +1,36 @@
+docker buildx build . -t gpu_multiply
+docker run -it gpu_multiply
+docker run --gpus all -it gpu_multiply
+docker rmi -f $(docker images --filter "dangling=true" -q --no-trunc)
+
+
+
+RUN apt-get install -y opencl-nvidia
+RUN apt-get install -y lib32-opencl-nvidia
+RUN apt-get install -y ocl-icd
+RUN apt-get install -y opencl-clhpp
+
+
+ $ sudo xhost +local:root
+  $ docker run --gpus all -it --rm --name gpu_multiply \
+  -v /tmp/.X11-unix:/tmp/.X11-unix \
+  -e DISPLAY=$DISPLAY \
+  -e QT_X11_NO_MITSHM=1 \
+  --net=host \
+  image_name bash
+
+
+docker buildx build . -t try
+docker run --gpus all -it try
+
+COPY host.c /app/
+COPY Makefile /app/
+
+
+docker build -t opencl-image .
+docker run -it opencl-image
+g++ -o gpu_multiply main.cpp matrix/matrix.cpp -lOpenCL
+./gpu_multiply
+
+docker build -t gpu-multiply .
+docker run -it gpu-multiply
